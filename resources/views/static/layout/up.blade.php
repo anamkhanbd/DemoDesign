@@ -14,6 +14,9 @@
 
     {{--custom css --}}
     <link rel="stylesheet" href="/css/style.css">
+
+    {{--dynamic css--}}
+    @yield('css')
   </head>
   <body>
       <div class="container-fluid">
@@ -43,9 +46,9 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row blue">
             <div class="container">
-                <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <nav class="navbar navbar-expand-sm navbar-light blue">
                     {{--
                     <a class="navbar-brand" href="#">Navbar</a>
                     --}}
@@ -55,41 +58,41 @@
                     </button>
                     <div class="collapse navbar-collapse" id="collapsibleNavId">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="{{@route('home')}}">Home <span class="sr-only">(current)</span></a>
+                            <li class="nav-item ">
+                                <a style="color: #fff;" class="nav-link" href="{{@route('home')}}">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{@route('camera')}}">Camera</a>
+                                <a style="color: #fff;" class="nav-link" href="{{@route('camera')}}">Camera</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{@route('flim')}}">Flim Camera</a>
+                                <a style="color: #fff;" class="nav-link" href="{{@route('flim')}}">Flim Camera</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{@route('dslrCamera')}}">DSLR Camera</a>
+                                <a style="color: #fff;" class="nav-link" href="{{@route('dslrCamera')}}">DSLR Camera</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{@route('lans')}}">Lans</a>
+                                <a style="color: #fff;" class="nav-link" href="{{@route('lans')}}">Lans</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{@route('cameraBag')}}">Camera Bag</a>
+                                <a style="color: #fff;" class="nav-link" href="{{@route('cameraBag')}}">Camera Bag</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{@route('tripots')}}">Tripots</a>
+                                <a style="color: #fff;" class="nav-link" href="{{@route('tripots')}}">Tripots</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{@route('cameraBattery')}}">Camera Battery</a>
+                                <a style="color: #fff;" class="nav-link" href="{{@route('cameraBattery')}}">Camera Battery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{@route('cameraCharger')}}">Charger </a>
+                                <a style="color: #fff;" class="nav-link" href="{{@route('cameraCharger')}}">Charger </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{@route('microwPhone')}}">Microw Phone</a>
+                                <a style="color: #fff;" class="nav-link" href="{{@route('microwPhone')}}">Microw Phone</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{@route('cameraSoftware')}}">Software</a>
+                                <a style="color: #fff;" class="nav-link" href="{{@route('cameraSoftware')}}">Software</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{@route('cameraGear')}}">Gear</a>
+                                <a style="color: #fff;" class="nav-link" href="{{@route('cameraGear')}}">Gear</a>
                             </li>
                             {{--
                             <li class="nav-item dropdown">

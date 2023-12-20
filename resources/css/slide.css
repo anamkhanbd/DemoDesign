@@ -1,0 +1,33 @@
+.content {
+    border: 1px solid pink;
+    height: 200px;
+    width: 200px;
+    overflow:hidden;
+    position: relative;
+}
+.first, .second {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    position: absolute;
+}
+.first {
+    background: red;
+    -webkit-transition: transform 1s ease;
+}
+.first.animate {
+    transform: translate3d(-200px, 0, 0);
+    -webkit-transform: translate3d(-200px, 0, 0);
+    -webkit-transition: transform 1s ease;
+}
+.second {
+    background: green;
+    transform: translate3d(400px, 0, 0);
+    -webkit-transform: translate3d(400px, 0, 0);
+    -webkit-transition: transform 1s ease;
+}
+.second.animate {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transition: transform 1s ease;
+}
