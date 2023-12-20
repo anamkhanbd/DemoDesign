@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
+
+    /*________ Main Navbar Manu Links__________*/
+
+
     public function index(){
         return view("welcome");
     }
@@ -45,4 +49,10 @@ class PagesController extends Controller
     public function cameraGear(){
         return view("/static/pages/cameragear");
     }
+
+
+
+
+    /* Sub navabar Manu */
+    
 }
