@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PagesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/',[PagesController::class,'index'])->name('home');
+Route::get('/camera',[PagesController::class,'camera'])->name('camera');
+Route::get('/flim-camera',[PagesController::class,'flimCamera'])->name('flim');
