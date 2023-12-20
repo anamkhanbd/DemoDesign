@@ -13,24 +13,36 @@ class PagesController extends Controller
         return view("singup");
     }
     public function camera(){
-        return view("camera");
+        return view("/static/pages/camera");
     }
     public function lens(){
-        return view("lens");
+        return view("/static/pages/lens");
     }
     public function cameraBag(){
-        return view("camera-bag");
+        return view("/static/pages/camera-bags");
     }
     public function dslrCamera(){
-        return view("dslr-camera");
-    }
-    public function cameraSoftware(){
-        return view("camera-software");
+        return view("/static/pages/dslr-camera");
     }
     public function cameraBattery(){
-        return view("camera-battery");
+        return view("/static/pages/camera-battery");
+    }
+    public function cameraSoftware(){
+        return view("/static/pages/camera-software");
     }
     public function flimCamera(){
-        return view("flim-camera");
+        return view("/static/pages/flim-camera");
+    }
+    public function tripots(){
+        return view("/static/pages/tripots");
+    }
+    public function cameraCharger(){
+        return view("/static/pages/camera-charger");
+    }
+    public function microwPhone(){
+        return view("/static/pages/microwphone");
+    }
+    public function cameraGear(){
+        return view("/static/pages/cameragear");
     }
 }

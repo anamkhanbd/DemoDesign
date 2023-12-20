@@ -56,40 +56,40 @@
                     <div class="collapse navbar-collapse" id="collapsibleNavId">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li class="nav-item active">
-                                <a class="nav-link" href="{{route::home}}">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="{{@route('home')}}">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{route::camera}}">Camera</a>
+                                <a class="nav-link" href="{{@route('camera')}}">Camera</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Flim Camera</a>
+                                <a class="nav-link" href="{{@route('flim')}}">Flim Camera</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">DSLR Camera</a>
+                                <a class="nav-link" href="{{@route('dslrCamera')}}">DSLR Camera</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Lans</a>
+                                <a class="nav-link" href="{{@route('lans')}}">Lans</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Camera Bag</a>
+                                <a class="nav-link" href="{{@route('cameraBag')}}">Camera Bag</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Tripots</a>
+                                <a class="nav-link" href="{{@route('tripots')}}">Tripots</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Camera Battery</a>
+                                <a class="nav-link" href="{{@route('cameraBattery')}}">Camera Battery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Charger </a>
+                                <a class="nav-link" href="{{@route('cameraCharger')}}">Charger </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Microw Phone</a>
+                                <a class="nav-link" href="{{@route('microwPhone')}}">Microw Phone</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Software</a>
+                                <a class="nav-link" href="{{@route('cameraSoftware')}}">Software</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Gear</a>
+                                <a class="nav-link" href="{{@route('cameraGear')}}">Gear</a>
                             </li>
                             {{--
                             <li class="nav-item dropdown">

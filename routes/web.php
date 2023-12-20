@@ -19,3 +19,13 @@ Route::get('/', function () {
 Route::get('/',[PagesController::class,'index'])->name('home');
 Route::get('/camera',[PagesController::class,'camera'])->name('camera');
 Route::get('/flim-camera',[PagesController::class,'flimCamera'])->name('flim');
+Route::get('/lens',[PagesController::class,'lens'])->name('lans');
+Route::get('/camera-bags',[PagesController::class,'cameraBag'])->name('cameraBag');
+Route::get('/camera-geair',[PagesController::class,'cameraGeair'])->name('cameraGeair');
+Route::get('/camera-software',[PagesController::class,'cameraSoftware'])->name('cameraSoftware');
+Route::get('/dslr-camera',[PagesController::class,'dslrCamera'])->name('dslrCamera');
+Route::get('/tripots',[PagesController::class,'tripots'])->name('tripots');
+Route::get('/camera-battery',[PagesController::class,'cameraBattery'])->name('cameraBattery');
+Route::get('/camera-charger',[PagesController::class,'cameraCharger'])->name('cameraCharger');
+Route::get('/microwphone',[PagesController::class,'microwPhone'])->name('microwPhone');
+Route::get('/cameragear',[PagesController::class,'cameraGear'])->name('cameraGear');
