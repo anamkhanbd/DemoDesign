@@ -22,6 +22,7 @@
                     <div class="first">THIS IS PAGE 1</div>
                     <div class="second">THIS IS PAGE 2</div>
                 </div>
+                <div class="btn btn-success"><a href="{{@route('testForm')}}">Form</a></div>
             </div>
         </div>
     </div>

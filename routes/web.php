@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,3 +30,10 @@ Route::get('/camera-battery',[PagesController::class,'cameraBattery'])->name('ca
 Route::get('/camera-charger',[PagesController::class,'cameraCharger'])->name('cameraCharger');
 Route::get('/microwphone',[PagesController::class,'microwPhone'])->name('microwPhone');
 Route::get('/cameragear',[PagesController::class,'cameraGear'])->name('cameraGear');
+
+
+/* test folder*/
+Route::get('static.test.form',[PagesController::class,'testForm'])->name('testForm');
+
+/*form test data view*/
+Route::post('static.test.form',[UserController::class,'addUser'])->name('addUser');

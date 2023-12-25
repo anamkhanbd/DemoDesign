@@ -55,4 +55,11 @@ class PagesController extends Controller
 
     /* Sub navabar Manu */
     
+
+
+    /*test*/
+    public function testForm(){
+        return view("static.test.form");
+    }
+
 }
