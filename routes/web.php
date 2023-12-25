@@ -34,6 +34,8 @@ Route::get('/cameragear',[PagesController::class,'cameraGear'])->name('cameraGea
 
 /* test folder*/
 Route::get('static.test.form',[PagesController::class,'testForm'])->name('testForm');
+Route::get('static.test.form-2',[PagesController::class,'form2'])->name('form2');
 
 /*form test data view*/
 Route::post('static.test.form',[UserController::class,'addUser'])->name('addUser');
+Route::post('static.test.form2',[PagesController::class,'addAdmin'])->name('addAdmin');

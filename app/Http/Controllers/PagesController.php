@@ -61,5 +61,23 @@ class PagesController extends Controller
     public function testForm(){
         return view("static.test.form");
     }
+    public function form2(){
+        return view("static.test.form-2");
+    }
+    public function addAdmin(Request $request){
+        $this->validate($request,[
+            "username"=> "required|max:30",
+            "useremail"=> "required|max:60",
+            "usernumber"=> "required|min:11|max:11",
+            "useradd"=> "required|max:50",
+        ],[
+            "username"=> "Name Fild",
+            "useremail"=> "Email Address",
+            "usernumber"=> "Mobile Number",
+            "useradd"=> "Address",
+        ]) ;
+        echo("<pre>");
+        print_r($request->all());
+    }
 
 }
