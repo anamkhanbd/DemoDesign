@@ -24,6 +24,7 @@
                 </div>
                 <div class="btn btn-success"><a href="{{@route('testForm')}}">Form</a></div>
                 <div class="btn btn-success"><a href="{{@route('form2')}}">Form2</a></div>
+                <div class="btn btn-success"><a href="{{@route('formEntry')}}">Form2</a></div>
             </div>
         </div>
     </div>

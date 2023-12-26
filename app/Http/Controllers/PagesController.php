@@ -85,4 +85,31 @@ class PagesController extends Controller
         print_r($request->all());
     }
 
+
+    /*form3:::::::::::::::code */
+    public function formEntry(){
+        return view("static.test.formEntry");
+    }
+
+    public function form3(Request $ref){
+        $ref->validate([
+            "username"=> "required|max:50",
+            "useremail"=> "required|max:50|email",
+            "usernumber"=> "required|min:11|max:11",
+        ],[
+            "username"=> "Name Feild is Required ",
+            "username.max"=> "Maximum use 50 charecters or letter",
+            "useremail"=> "Email Address is Required",
+            "useremail.email"=> "It's Not a Email Address",
+            "useremail.max"=> "Email Address is Maximum size 50 charecter",
+            "usernumber"=> "Mobile Number fild is Required",
+            "usernumber.numaric"=> "Only use Number 1-9",
+            "usernumber.min"=> "Number fild is Required minimum 11 Digit",
+            "usernumber.max"=> "Number use Maximum size 11 Digit",
+        ]);
+        echo("<pre>");
+        print_r($ref->all());
+
+    }
+
 }
