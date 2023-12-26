@@ -71,10 +71,15 @@ class PagesController extends Controller
             "usernumber"=> "required|min:11|max:11",
             "useradd"=> "required|max:50",
         ],[
-            "username"=> "Name Fild",
-            "useremail"=> "Email Address",
-            "usernumber"=> "Mobile Number",
+            "username"=> "Name Fild is Required Fill This",
+            "username.max"=> "Maximum use 30 Latter",
+            "useremail"=> "Email Address is Required",
+            "useremail.max"=> "Maximum use 50 Carecter Email Address",
+            "usernumber"=> "Mobile Number is Required",
+            "usernumber.max"=> "Maximum number 11 digit",
+            "usernumber.min"=> "Minimum Number is 11 Digit",
             "useradd"=> "Address",
+            "useradd.max"=> "Maximum use 50 Charecter",
         ]) ;
         echo("<pre>");
         print_r($request->all());
