@@ -121,7 +121,7 @@ class PagesController extends Controller
             "username"=> "required|max:30|",
             "useremail"=> "required|max:60",
             "password"=> "required|min:6|max:32",
-            "cr-password"=>"required",
+            "cr-password"=>"required|same:password",
         ],[
             "username"=> "This Fild is Required .",
             "username.max"=> "maximum use 30 charecter .",

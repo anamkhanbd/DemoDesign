@@ -35,7 +35,7 @@
                       {{--password--}}
                       <div class="form-group">
                         <label for="">Password </label>
-                        <input type="password" name="password" id="" value="{{old('password')}}" class="form-control @error('password') is-invalid @enderror" placeholder="Enter Your Name" aria-describedby="helpId">
+                        <input type="text" name="password" id="" value="{{old('password')}}" class="form-control @error('password') is-invalid @enderror" placeholder="Enter Your Name" aria-describedby="helpId">
                         <small id="helpId" class="text-muted">
                           @error('password')
                               {{$message}}
