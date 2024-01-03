@@ -7,7 +7,7 @@
                     @csrf
                     <div class="form-group">
                       <label for="">Name</label>
-                      <input type="text" name="username" id="" class="form-control @error('username') is-invalid @enderror " value="{{old('username')}}" placeholder="" aria-describedby="helpId">
+                      <input type="text" name="username" id="" class="form-control @error('username') is-invalid @enderror" value="{{old('username')}}" placeholder="" aria-describedby="helpId">
                       <small id="helpId" class="text-muted">
                         @error('username')
                          {{$message}}   
