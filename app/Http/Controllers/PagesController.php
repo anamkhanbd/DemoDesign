@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Infouser;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -107,8 +107,8 @@ class PagesController extends Controller
             "usernumber.min"=> "Number fild is Required minimum 11 Digit",
             "usernumber.max"=> "Number use Maximum size 11 Digit",
         ]);
-        echo("<pre>");
-        print_r($ref->all());
+
+        
 
     }
 
@@ -135,6 +135,31 @@ class PagesController extends Controller
         echo("<pre>");
         print_r($formFour->all());
     }
+
+
+    /* info user entry */
+    public function infoadd(){
+        return view("static.test.infouser");
+    }
+    public function store(Request $request){
+        $this->validate($request,[
+            "username"=> "required|max:30",
+            "useremail"=> "required|max:50",
+            "usernumber"=>"required",
+        ],[
+            "username"=> "This Fild is Required.",
+            "username.max"=> "Maximum Charecter use 30 .",
+            "useremail"=> "This Fild is Required .",
+            "useremail.max"=> "Maximum Cherecter use 50 .",
+            "usernumber"=>"This Fild is Required .",
+        ]);
+        $infousers = new infouser;
+        $infousers->username = $request->username;
+        $infousers->useremail = $request->useremail;
+        $infousers->usernumber = $request->usernumber;
+        $infousers->save() ;
+        return back()->withSuccess('Data Submited') ;
+        }
 
 
 }

@@ -45,3 +45,7 @@ Route::post('static.test.formEntry',[PagesController::class,'form3'])->name('for
 /*Form4::::::::::::::::Route */
 Route::get('FormID',[PagesController::class,'form4'])->name('form4');
 Route::post('static.test.form4',[PagesController::class,'login'])->name('login');
+
+/* Form :::::::::::::: Info Add  */
+Route::get('User-info-add',[PagesController::class,'infoadd'])->name('infoEntry');
+Route::post('static.test.store',[PagesController::class,'store'])->name('store');
