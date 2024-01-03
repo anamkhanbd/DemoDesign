@@ -41,3 +41,7 @@ Route::get('static.test.formEntry',[PagesController::class,'formEntry'])->name('
 Route::post('static.test.form',[UserController::class,'addUser'])->name('addUser');
 Route::post('static.test.form2',[PagesController::class,'addAdmin'])->name('addAdmin');
 Route::post('static.test.formEntry',[PagesController::class,'form3'])->name('form3');
+
+/*Form4::::::::::::::::Route */
+Route::get('FormID',[PagesController::class,'form4'])->name('form4');
+Route::post('static.test.form4',[PagesController::class,'login'])->name('login');

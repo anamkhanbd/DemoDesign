@@ -112,4 +112,29 @@ class PagesController extends Controller
 
     }
 
+    /*Form4:::::::::::::::::::code */
+    public function form4(){
+        return view("static.test.form4");
+    }
+    public function login(Request $formFour){
+        $formFour->validate([
+            "username"=> "required|max:30|",
+            "useremail"=> "required|max:60",
+            "password"=> "required|min:6|max:32",
+            "cr-password"=>"required",
+        ],[
+            "username"=> "This Fild is Required .",
+            "username.max"=> "maximum use 30 charecter .",
+            "useremail"=> "This fild is Required .",
+            "useremail.max"=> "Maximum use 60 charecter .",
+            "password"=> "This fild is Required",
+            "password.min"=> "Minimum Password 6 Charecter",
+            "password.max"=>"Maximum Password is 32 Cherecter",
+            "cr-password"=> "This fild is REquired",
+        ]);
+        echo("<pre>");
+        print_r($formFour->all());
+    }
+
+
 }
